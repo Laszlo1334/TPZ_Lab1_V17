@@ -71,9 +71,7 @@ public class AutoTester {
             Line.fromIntercepts(0, 100);
         });
 
-        totalTests++;
-        System.out.println("[OK] Test 9 (Out of range) - verified manually via Main class input");
-        passed++;
+        System.out.println("[INFO] Test 9 (Out of range) - verified manually via Main class input");
 
         System.out.println("RESULT: " + passed + " / " + totalTests + " tests passed.");
     }

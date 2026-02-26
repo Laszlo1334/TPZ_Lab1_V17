@@ -28,10 +28,11 @@ public class Line {
                             "Fix action: Enter non-zero values for intercepts a and b."
             );
         }
-        double a = bIntercept;
-        double b = aIntercept;
+        // Convert intercept form x/aIntercept + y/bIntercept = 1 to ax + by + c = 0
+        double coefA = bIntercept;
+        double coefB = aIntercept;
         double c = -(aIntercept * bIntercept);
-        return new Line(a, b, c);
+        return new Line(coefA, coefB, c);
     }
 
     public Point getIntersection(Line other) {

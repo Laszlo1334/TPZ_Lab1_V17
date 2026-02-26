@@ -4,7 +4,7 @@ import java.util.List;
 public class GeometrySolver {
 
     public static String solve(Line l1, Line l2, Line l3) {
-        if (l1.isCoincidentWith(l2) && l2.isCoincidentWith(l3)) {
+        if (l1.isCoincidentWith(l2) && l1.isCoincidentWith(l3) && l2.isCoincidentWith(l3)) {
             return "Lines coincide";
         }
 
